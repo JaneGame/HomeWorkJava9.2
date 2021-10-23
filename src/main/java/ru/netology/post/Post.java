@@ -4,14 +4,14 @@ import ru.netology.source.PostSource;
 
 public class Post {
     private int id;
-    private int owner_id;
-    private int from_id;
-    private int created_by;
+    private int ownerId;
+    private int fromId;
+    private int createdBy;
     private String text;
     private int date;
-    private int reply_owner_id;
-    private int reply_post_id;
-    private boolean friends_only;
+    private int replyOwnerId;
+    private int replyPostId;
+    private boolean friendsOnly;
     private String postType;
     private String signerId;
     private boolean canPin;
@@ -30,15 +30,6 @@ public class Post {
     private ViewsInfo viewsInfo;
     private PostSource postSource;
 
-    public PostSource getPostSource() {
-        return postSource;
-    }
-
-    public Post setPostSource(PostSource postSource) {
-        this.postSource = postSource;
-        return this;
-    }
-
     public int getId() {
         return id;
     }
@@ -48,30 +39,30 @@ public class Post {
         return this;
     }
 
-    public int getOwner_id() {
-        return owner_id;
+    public int getOwnerId() {
+        return ownerId;
     }
 
-    public Post setOwner_id(int owner_id) {
-        this.owner_id = owner_id;
+    public Post setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
         return this;
     }
 
-    public int getFrom_id() {
-        return from_id;
+    public int getFromId() {
+        return fromId;
     }
 
-    public Post setFrom_id(int from_id) {
-        this.from_id = from_id;
+    public Post setFromId(int fromId) {
+        this.fromId = fromId;
         return this;
     }
 
-    public int getCreated_by() {
-        return created_by;
+    public int getCreatedBy() {
+        return createdBy;
     }
 
-    public Post setCreated_by(int created_by) {
-        this.created_by = created_by;
+    public Post setCreatedBy(int createdBy) {
+        this.createdBy = createdBy;
         return this;
     }
 
@@ -93,30 +84,30 @@ public class Post {
         return this;
     }
 
-    public int getReply_owner_id() {
-        return reply_owner_id;
+    public int getReplyOwnerId() {
+        return replyOwnerId;
     }
 
-    public Post setReply_owner_id(int reply_owner_id) {
-        this.reply_owner_id = reply_owner_id;
+    public Post setReplyOwnerId(int replyOwnerId) {
+        this.replyOwnerId = replyOwnerId;
         return this;
     }
 
-    public int getReply_post_id() {
-        return reply_post_id;
+    public int getReplyPostId() {
+        return replyPostId;
     }
 
-    public Post setReply_post_id(int reply_post_id) {
-        this.reply_post_id = reply_post_id;
+    public Post setReplyPostId(int replyPostId) {
+        this.replyPostId = replyPostId;
         return this;
     }
 
-    public boolean isFriends_only() {
-        return friends_only;
+    public boolean isFriendsOnly() {
+        return friendsOnly;
     }
 
-    public Post setFriends_only(boolean friends_only) {
-        this.friends_only = friends_only;
+    public Post setFriendsOnly(boolean friendsOnly) {
+        this.friendsOnly = friendsOnly;
         return this;
     }
 
@@ -261,6 +252,15 @@ public class Post {
 
     public Post setViewsInfo(ViewsInfo viewsInfo) {
         this.viewsInfo = viewsInfo;
+        return this;
+    }
+
+    public PostSource getPostSource() {
+        return postSource;
+    }
+
+    public Post setPostSource(PostSource postSource) {
+        this.postSource = postSource;
         return this;
     }
 }
